@@ -24,18 +24,7 @@
       box-shadow:0 0 20px rgba(0,0,0,0.5);
     }
 
-    header h1{
-      font-size:40px;
-      color:#38bdf8;
-    }
-
-    header p{
-      margin-top:10px;
-      color:#cbd5e1;
-    }<section class="hero">
-  <img src="banner.png" alt="RAVIYA ACCOUNT STORE">
-</section>                                                             
-.hero{
+    
   width:100%;
   overflow:hidden;
   border-radius:20px;
@@ -48,11 +37,88 @@
   display:block;
   object-fit:cover;
 }
-    .hero{
-      text-align:center;
-      padding:80px 20px;
-      background:url('ChatGPT Image May 13, 2026, 02_58_40 AM.png') center/cover;
+    <section class="hero">
+
+  <img src="banner.png" alt="RAVIYA STORE">
+
+  <div class="hero-content">
+    <h1>RAVIYA ACCOUNT STORE</h1>
+
+    <p>BUY • SELL • EXCHANGE</p>
+
+    <a href="https://wa.me/94763162805" class="btn">
+      💬 WhatsApp
+    </a>
+  </div>
+
+</section>
     }
+```html
+<section class="hero">
+
+  <img src="banner.png" alt="RAVIYA STORE">
+
+  <div class="hero-content">
+    <h1>RAVIYA ACCOUNT STORE</h1>
+
+    <p>BUY • SELL • EXCHANGE</p>
+
+    <a href="https://wa.me/94763162805" class="btn">
+      💬 WhatsApp
+    </a>
+  </div>
+
+</section>
+```
+
+```css
+.hero{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.hero img{
+  width:100%;
+  display:block;
+}
+
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:white;
+  width:100%;
+}
+
+.hero-content h1{
+  font-size:42px;
+  font-weight:bold;
+  text-shadow:0 0 15px #000;
+}
+
+.hero-content p{
+  font-size:18px;
+  margin-top:10px;
+  letter-spacing:3px;
+  text-shadow:0 0 10px #000;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#00bfff;
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+  box-shadow:0 0 15px #00bfff;
+}
+```
 
     .hero h2{
       font-size:50px;
